@@ -1,0 +1,4 @@
+2025-01-15 22:45:43,902 - DEBUG - This is a debug message
+2025-01-15 22:45:43,902 - INFO - This is an info message
+2025-01-15 22:45:43,902 - WARNING - This is a warning message
+2025-01-15 22:45:43,902 - ERROR - This is an error message

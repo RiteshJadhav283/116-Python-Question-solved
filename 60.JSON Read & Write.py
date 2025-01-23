@@ -10,11 +10,11 @@ try:
     else:
         print(f"Key '{key_to_modify}' not found in the JSON data.")
     with open(filename,'w') as file:
-        json.dump(data,file,indent=4)
+        json.dump(data,file,indent=4) 
     print("Data has been updated in the JSON file.")
 except FileNotFoundError:
     print(f"The file {filename} was not found.")
 except json.JSONDecodeError:
     print("Error: The file is not a valid JSON file.")
 except Exception as e:
-    print(f"An error occurred: {e}")
+    print(f"An error occurred: {e}") 

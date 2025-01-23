@@ -1,12 +1,9 @@
-def euclidean_gcd(a, b):
-    while b != 0:
-        a, b = b, a % b
-    return a
+import math
 
 def lcm(a, b):
-    return abs(a * b) // euclidean_gcd(a, b)
+    return abs(a * b) // math.gcd(a, b)
 
-x = int(input("Enter the first number: "))
-y = int(input("Enter the second number: "))
-result = lcm(x, y)
-print("LCM of", x, "and", y, "is:", result)
+num1 = int(input("Enter number 1:"))
+num2 = int(input("Enter number 2:"))
+result = lcm(num1, num2)
+print(f"LCM of {num1} and {num2} is {result}")

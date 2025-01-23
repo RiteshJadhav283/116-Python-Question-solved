@@ -1,3 +1,11 @@
+def bubble_sort(arr):
+    n=len(arr)
+    for i in range(n):
+        for j in range(0,n-i-1):
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1]=arr[j+1],arr[j]
+    return arr
+
 def binary_search(arr, target):
     low=0
     high=len(arr) - 1
@@ -13,8 +21,9 @@ def binary_search(arr, target):
             
     return -1
 
-numbers=list(map(int, input("Enter sorted numbers (space-separated): ").split()))
+numbers=list(map(int, input("Enter sorted/unsorted number (space-separated): ").split()))
 target=int(input("Enter the number to search for: "))
+sort=bubble_sort(numbers)
 index=binary_search(numbers, target)
 
 if index!=-1:
